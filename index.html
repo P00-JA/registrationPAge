@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikers Point</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/hiker.png" type="image/gif" sizes="30x30"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="loginPage.css">
+</head>
+<body>
+    <!--Navigation bar-->
+    <header>
+        <nav class="navBar">
+            <a href="#" class="logo">
+                <img src="assets/hiker.png" alt="logo">
+                <h3>Hikers Point</h3>
+            </a>
+            <button class="loginButton" id="loginPopUpButton">Login</button>
+        </nav>
+    </header>
+    <div class="backgroundBlur"></div>
+    <!--Pop up form-->
+    <div class="popupForm" id="popupForm">
+        <span class="login-close-button" onclick="closeLogin()">X</span>
+            <div class="formContent">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="inputFields">
+                    <label>Email</label>
+                    <input type="text" placeholder="Email" id="mailIdLogin" required>
+                    </div>
+                    <div class="inputFields">
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" id="passwordLogin" required>
+                    </div>
+                    <a href="#" class="forgotPassword">Forgot password ?</a>
+                    <button type="submit" id="loginButton">Log In</button>
+                </form>
+                <div class="bottomLink">
+                    Don't have an account ?
+                    <a href="#" onclick="openSignUp()">Sign Up</a>
+                </div>
+            </div>
+    </div>
+     <!--Pop up signup form-->
+     <div class="signUpPopup">
+        <span class="signUp-close" onclick="closeSignup()">X</span>
+            <div class="formContent">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="inputFields">
+                        <label>Name</label>
+                        <input type="text" placeholder="eg:Username" id="nameSignup" required>
+                    </div>
+                    <div class="inputFields">
+                        <label>Mobile number</label>
+                        <input type="tel" placeholder="eg:1234567890" minlength="10" maxlength="10" id="mobileNumSignUp" required>
+                    </div>
+                    <div class="inputFields">
+                    <label>Email</label>
+                    <input type="text" placeholder="eg: username@gmail.com" id="mailIdSignUp" required>
+                    </div>
+                    <div class="inputFields">
+                        <label>Create Password</label>
+                        <input type="password" placeholder="eg: User#1234" id="passwordSignUp" required>
+                    </div>
+                    
+                    <button type="submit" id="signupButton">Sign up</button>
+                </form>
+                <div class="bottomLink">
+                    Already have an account ?
+                    <a href="#" onclick="openLogin()">Log In</a>
+                </div>
+            </div>
+    </div>
+    <div class="alertPopup" id="alertPopup">
+        Please fill the required fields !<br>
+        <button class="alertOk" onclick="closeAlert()">OK</button>
+    </div>
+    <div class="loader"></div>
+    <div class="dashboard">
+        Welcome Hiker !
+    </div>
+
+    <script src="loginPage.js" defer></script>
+</body>
+</html>
