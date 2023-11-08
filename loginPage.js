@@ -184,12 +184,12 @@ function acceptUserData(){
 }
 //save collected details to local storage
 function saveUserData() {
-    localStorage.setItem("Users", JSON.stringify(storeUserData));
+    localStorage.setItem("data", JSON.stringify(storeUserData));
 }
 
 // Retrieve user data from local storage
 function showUserData() {
-    const userData = JSON.parse(localStorage.getItem("Users"));
+    const userData = JSON.parse(localStorage.getItem("data"));
     if (userData) {
         storeUserData = userData;
     }
