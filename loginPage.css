@@ -6,12 +6,14 @@
     box-sizing: border-box;
     font-family: 'Playpen Sans', cursive;
 }
+
 body{
     width: 100%;
     height: 100vh;
     background: url("assets/mountainColorful.png") center / cover no-repeat;
 
 }
+
 header{
 
     position: fixed;
@@ -20,6 +22,7 @@ header{
     right: 0px;
     padding: 0 10px;
 }
+
 .navBar{
     display:flex;
     padding: 22px 20px 0px 0px;
@@ -28,22 +31,26 @@ header{
     justify-content: space-between;
     margin: 0 auto;
 }
+
 .navBar .logo{
     display: flex;
     gap:10px;
     align-items:center;
     text-decoration: none;
 }
+
 .navBar .logo img{
     width:100px;
     border-radius: 0px;
 }
+
 .navBar .logo h3{
     color: aliceblue;
     font-family: 'Cinzel', serif;
     font-size: 1.7rem;
     font-weight: 600;
 }
+
 .navBar .loginButton{
     border: none;
     outline: none;
@@ -55,11 +62,13 @@ header{
     cursor: pointer;
     background: rgb(255, 255, 255);
 }
+
 .navBar .loginButton:hover{
     background-color: rgb(141, 34, 241);
     color: aliceblue;
     border: 2px solid #fff;
 }
+
 .backgroundBlur{
     display: none;
     position: fixed;
@@ -69,6 +78,7 @@ header{
     height: 100%;
     backdrop-filter: blur(5px);
 }
+
 .popupForm{
     display: none;
     position: fixed;
@@ -80,17 +90,20 @@ header{
     width: 100%;
     border-radius: 15px;
 }
+
 .popupForm .formContent{
     width: 100%;
     padding: 40px;
     color: #fff;
 }
+
 .popupForm .formContent h2{
     display: flex;
     justify-content: center;
     padding: 10px;
     font-size: xx-large;
 }
+
 form .inputFields{
     height: 50px;
     width: 80%;
@@ -99,6 +112,7 @@ form .inputFields{
     margin-bottom: 35px;
     margin-right: 30px;
 }
+
 form .inputFields input{
     width: 100%;
     height: 100%;
@@ -107,26 +121,22 @@ form .inputFields input{
     font-size: 1rem;
     border: 1px solid #100f10;
 }
+
 .inputFields input:focus {
     border: 3px solid transparent;
     border-image: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
     border-image-slice: 1;
 }
-.inputFields.failure input{
-    border:2px solid rgb(169, 4, 4);
-}
+
 .formContent a{
     color: rgb(28, 28, 241);
     text-decoration: none;
 }
+
 .formContent a:hover{
     text-decoration: underline;
 }
-.formContent .forgotPassword{
-    display: inline-flex;
-    margin-top: 14px;
-    margin-left: 40px;
-}
+
 .popupForm button{
     width: 80%;
     outline: none;
@@ -140,15 +150,18 @@ form .inputFields input{
     background: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
     transition: 0.2s ease-in-out;
 }
+
 .popupForm button:hover{
     background: #2e2d2e;
     border: 3px solid transparent;
     border-image: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
     border-image-slice: 1;
 }
+
 .formContent .bottomLink{
     text-align: center;
 }
+
 .popupForm .login-close-button{
     position: absolute;
     top:20px;
@@ -158,9 +171,11 @@ form .inputFields input{
     font-size: larger;
     cursor: pointer;
 }
+
 .popupForm .login-close-button:hover{
     color:deeppink;
 }
+
 .signUpPopup{
     display: none;
     position: fixed;
@@ -172,6 +187,7 @@ form .inputFields input{
     width: 100%;
     border-radius: 15px;
 }
+
 .signUp-close{
     position: absolute;
     top:20px;
@@ -181,20 +197,24 @@ form .inputFields input{
     font-size: larger;
     cursor: pointer;
 }
+
 .signUpPopup .formContent{
     width: 100%;
     padding: 40px;
     color: #fff;
 }
+
 .signUpPopup .formContent h2{
     display: flex;
     justify-content: center;
     padding: 10px;
     font-size: xx-large;
 }
+
 .signUpPopup .signUp-close:hover{
     color:deeppink;
 }
+
 .signUpPopup button{
     width: 80%;
     outline: none;
@@ -208,15 +228,18 @@ form .inputFields input{
     background: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
     transition: 0.2s ease-in-out;
 }
+
 .signUpPopup button:hover{
     background: #2e2d2e;
     border: 3px solid transparent;
     border-image: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
     border-image-slice: 1;
 }
+
 .formContent .bottomLink{
     text-align: center;
 }
+
 .alertPopup{
     display: none;
     position: relative;
@@ -237,6 +260,7 @@ form .inputFields input{
     animation-duration: 4s;
     animation-delay: 1s;
 }
+
 .alertOk{
     width: 30%;
     float: right;
@@ -249,15 +273,18 @@ form .inputFields input{
     font-weight:900;
     background: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
 }
+
 @keyframes slide {
     0%   {left:50%; top:30px;}
 }
+
 .alertOk:hover{
     background: #676666;
     border: 3px solid transparent;
     border-image: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
     border-image-slice: 1;
 }
+
 .alertSuccess{
     display: none;
     position: relative;
@@ -278,48 +305,22 @@ form .inputFields input{
     animation-duration: 4s;
     animation-delay: 1s;
 }
-.dashboard{
-    visibility:hidden;
-    position: fixed;
-    top: 20%;
-    left: 30%;
-    width: 40%;
-    height: 60%;
-    background: rgba(13, 13, 13, 0.5);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 9rem;
-    color: white;
-}
+
 @media (max-width: 760px){
     .popupForm{
         width: 90%;
     }
+
     .popupForm .formContent{
         padding: 30px 20px;
     }
-    .dashboard{
-        left: 5%;
-        width: 90%;
-        height: 40%;
-        font-size: xx-large;
-    }
+
     .loginButton{
       position: absolute;
       top:90vh;
-      left:20%;
+      left:25%;
       width: 50%;
     }
 }
-@media (min-width: 1488px){
-    .dashboard{
-        left: 5%;
-        width: 90%;
-        height: 40%;
-        font-size: 5rem;
-    }
-}
+
     
