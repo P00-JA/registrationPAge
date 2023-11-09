@@ -1,4 +1,5 @@
 const logoutButton=document.getElementById("logoutPopUpButton");
+
 logoutButton.addEventListener('click',()=>{
     const conformation=confirm("Are you sure you want to log out?")
     if(conformation){
@@ -7,6 +8,7 @@ logoutButton.addEventListener('click',()=>{
        
     }
 })
+
 const getCookie=document.cookie;
 // Split the cookies into key-value pairs
 const nameValue=getCookie.split('=');
@@ -14,4 +16,5 @@ const nameValue=getCookie.split('=');
 if (!nameValue[1]){
     window.location.href = "/registrationPAge/index.html";
 }
+
 document.querySelector(".userName").innerHTML=nameValue[1];
