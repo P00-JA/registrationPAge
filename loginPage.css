@@ -135,7 +135,7 @@ form .inputFields input{
     text-decoration: underline;
 }
 
-.popupForm button{
+.formSubmitButtons{
     width: 80%;
     outline: none;
     border: none;
@@ -149,7 +149,7 @@ form .inputFields input{
     transition: 0.2s ease-in-out;
 }
 
-.popupForm button:hover{
+.formSubmitButtons:hover{
     background: #2e2d2e;
     border: 3px solid transparent;
     border-image: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
@@ -211,27 +211,6 @@ form .inputFields input{
 
 .signUpPopup .signUp-close:hover{
     color:deeppink;
-}
-
-.signUpPopup button{
-    width: 80%;
-    outline: none;
-    border: none;
-    font-size: 1.2rem;
-    padding: 14px 0px;
-    border-radius: 3px;
-    margin: 25px 40px;
-    color: aliceblue;
-    font-weight:900;
-    background: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
-    transition: 0.2s ease-in-out;
-}
-
-.signUpPopup button:hover{
-    background: #2e2d2e;
-    border: 3px solid transparent;
-    border-image: linear-gradient(45deg, rgb(255, 0, 132) , rgb(187, 0, 255));
-    border-image-slice: 1;
 }
 
 .formContent .bottomLink{
