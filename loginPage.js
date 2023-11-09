@@ -122,6 +122,7 @@ signUpButton.addEventListener('click',(e)=>{
         validateForm();
     }
 })
+
 //to close login/signUp popup
 function closeLogin(){
    document.querySelector(".backgroundBlur").style.display="none"
